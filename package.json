@@ -1,15 +1,16 @@
 {
-  "name": "DevHouseApi-UdemyCourse",
+  "name": "DevHouseApiUdemyCourse",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:GiovaniBoff/DevHouseApi-UdemyCourse.git",
   "author": "Giovani Boff <giovanisouza15@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon ./src/server.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.27"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
