@@ -3,6 +3,7 @@ import multer from "multer";
 import uploadConfig from "./config/upload";
 import SessionController from "./controllers/SessionController";
 import HouseController from "./controllers/HouseController";
+import DashboardController from "./controllers/DashboardController";
 
 const routes = new Router();
 const upload = multer(uploadConfig);
@@ -15,7 +16,8 @@ routes.put(
   upload.single("thumbnail"),
   HouseController.update
 );
-
 routes.delete("/houses", HouseController.destroy);
+
+routes.get("/dashboard", DashboardController.show);
 
 export default routes;
